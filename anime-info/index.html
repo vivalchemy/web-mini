@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="search-bar">
+      <form>
+        <input type="text" name="search" placeholder="Search an anime" onfocus="this.select()" />
+        <button class="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-search">
+            <circle cx="11.5" cy="12.5" r="8" />
+            <path d="m20 23.5-4.3-4.3" />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="catalog">
+      <!-- This is a catalog -->
+      <template id="card-template">
+        <div class="card" id="media-id">
+          <!-- TODO: The below commented part it yet to be styled and logic is not implemented only the data is fetched -->
+          <!-- <div class="status">Status symbol</div> -->
+          <div class="card-img">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/20622.jpg" alt="someIMg" />
+          </div>
+          <!-- TODO: The below commented part it yet to be styled and logic is not implemented only the data is fetched -->
+          <!--  <div class="rating"> -->
+          <!--   Rating -->
+          <!--  </div>  -->
+          <div class="card-title">
+            This is bigger card card card card card card card card card card
+            title
+          </div>
+          <!--   <div class="episodes"> -->
+          <!--     number of episodes -->
+          <!--   </div> -->
+          <!--   <div class="airing-at"> -->
+          <!--      -->
+          <!--     airing at time -->
+          <!--   </div> -->
+        </div>
+      </template>
+    </div>
+  </div>
+  <!-- TODO: Anime info -->
+  <div class="modal">This is modal</div>
+  <div class="notification">
+    <span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-circle-check">
+        <circle cx="12" cy="12" r="10" />
+        <path d="m9 12 2 2 4-4" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-circle-x">
+        <circle cx="12" cy="12" r="10" />
+        <path d="m15 9-6 6" />
+        <path d="m9 9 6 6" />
+      </svg>
+    </span>
+    <div class="content">This is the notification content</div>
+  </div>
+</body>
+
+</html>

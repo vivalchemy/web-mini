@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: rgb(159, 236, 254);
+  background-image: linear-gradient(
+    90deg,
+    rgba(159, 236, 254, 1) 0%,
+    rgba(195, 148, 254, 1) 100%
+  );
+}
+
+div {
+  backdrop-filter: blur(0.5rem);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1rem;
+  box-shadow:
+    2rem 2rem 4rem rgb(0, 0, 0, 0.3),
+    -2rem -2rem 6rem rgb(255, 255, 255, 0.3);
+  justify-content: center;
+  align-items: center;
+  max-width: 50rem;
+}
+
+p {
+  font-size: 1.61rem;
+}
+
+p::before,
+p::after {
+  content: '"';
+}
+
+span::before {
+  content: "-";
+}
+
+div::after {
+  content: "Press [Enter] for a new quote";
+  position: absolute;
+  bottom: -7rem;
+  /* thala for a reason */
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
