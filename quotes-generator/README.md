@@ -1,5 +1,3 @@
-Here's a README for your Quotes Generator project:
-
 # Quotes Generator
 
 A simple web application that provides random quotes for inspiration. Users can refresh the displayed quote by clicking a button or pressing the Enter key.
